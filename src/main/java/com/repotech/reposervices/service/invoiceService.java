@@ -7,11 +7,13 @@ package com.repotech.reposervices.service;
 import com.repotech.reposervices.entity.Invoice;
 import java.util.List;
 import java.util.Optional;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author amahayak
  */
+@Component
 public interface invoiceService {
     //Save Ops
     Invoice saveInvoices(Invoice invoice);
