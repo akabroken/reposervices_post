@@ -7,13 +7,14 @@ package com.repotech.reposervices;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration;
 import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;
 
 /**
  *
  * @author amahayak
  */
-@SpringBootApplication(exclude = {ErrorMvcAutoConfiguration.class})
+@SpringBootApplication(exclude = {ErrorMvcAutoConfiguration.class,SqlInitializationAutoConfiguration.class})
 public class Reposervices {
 
     public static void main(String... args) {
