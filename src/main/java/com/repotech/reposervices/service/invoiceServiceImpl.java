@@ -5,7 +5,8 @@
 package com.repotech.reposervices.service;
 
 import com.repotech.reposervices.entity.Invoice;
-import com.repotech.repository.InvoiceRepository;
+import com.repotech.reposervices.repository.InvoiceRepository;
+
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;

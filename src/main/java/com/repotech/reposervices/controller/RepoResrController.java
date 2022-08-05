@@ -4,10 +4,10 @@
  */
 package com.repotech.reposervices.controller;
 
-import com.repotech.repomodel.InvoiceModel;
+
 import com.repotech.reposervices.entity.Invoice;
+import com.repotech.reposervices.repository.InvoiceRepository;
 import com.repotech.reposervices.service.invoiceService;
-import com.repotech.repository.InvoiceRepository;
 import java.util.List;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
