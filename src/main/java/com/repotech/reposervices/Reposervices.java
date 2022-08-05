@@ -12,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration;
 import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
@@ -22,9 +23,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication(exclude = {ErrorMvcAutoConfiguration.class,
     SqlInitializationAutoConfiguration.class}/*,
         scanBasePackages = {"com.repotech.reposervices","com.repotech.reposervices.controller"}*/)
-@ComponentScan(basePackages = "com.repotech.reposervices.RepoResrController")
+@EnableCaching
+@ComponentScan(basePackages = "com.repotech.reposervices")
 @EnableAutoConfiguration
-//@ComponentScan(basePackageClasses  = RepoResrController.class)
+@ComponentScan(basePackageClasses  = RepoResrController.class)
 @EntityScan("com.repotech.reposervices.*")
 @EnableJpaRepositories(basePackages = "com.repotech.repository")
 public class Reposervices {
