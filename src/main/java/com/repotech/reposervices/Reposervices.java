@@ -24,9 +24,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
     SqlInitializationAutoConfiguration.class}/*,
         scanBasePackages = {"com.repotech.reposervices","com.repotech.reposervices.controller"}*/)
 @EnableCaching
-@ComponentScan(basePackages = "com.repotech.reposervices")
+@ComponentScan(basePackages = "com.repotech.reposervices.controller")
 @EnableAutoConfiguration
-@ComponentScan(basePackageClasses  = RepoResrController.class)
+//@ComponentScan(basePackageClasses  = RepoResrController.class)
 @EntityScan("com.repotech.reposervices.*")
 @EnableJpaRepositories(basePackages = "com.repotech.repository")
 public class Reposervices {
