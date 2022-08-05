@@ -5,7 +5,6 @@
 
 package com.repotech.reposervices;
 
-import com.repotech.reposervices.controller.RepoResrController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -20,14 +19,16 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  *
  * @author amahayak
  */
+//@SpringBootApplication(exclude = {ErrorMvcAutoConfiguration.class,
+//    SqlInitializationAutoConfiguration.class},
+//        scanBasePackages = {"com.repotech.reposervices","com.repotech.reposervices.controller"})
+//@EnableCaching
+//@ComponentScan(basePackages = "com.repotech.reposervices")
+//@EnableAutoConfiguration
+////@ComponentScan(basePackageClasses  = RepoResrController.class)
+//@EntityScan("com.repotech.reposervices.*")
 @SpringBootApplication(exclude = {ErrorMvcAutoConfiguration.class,
-    SqlInitializationAutoConfiguration.class},
-        scanBasePackages = {"com.repotech.reposervices","com.repotech.reposervices.controller"})
-@EnableCaching
-@ComponentScan(basePackages = "com.repotech.reposervices")
-@EnableAutoConfiguration
-//@ComponentScan(basePackageClasses  = RepoResrController.class)
-@EntityScan("com.repotech.reposervices.*")
+   SqlInitializationAutoConfiguration.class})
 @EnableJpaRepositories(basePackages = "com.repotech.repository")
 public class Reposervices {
 
