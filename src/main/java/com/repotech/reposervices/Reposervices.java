@@ -29,7 +29,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 //@EntityScan("com.repotech.reposervices.*")
 @SpringBootApplication(exclude = {ErrorMvcAutoConfiguration.class,
    SqlInitializationAutoConfiguration.class})
-@EnableJpaRepositories(basePackages = "com.repotech.repository")
+@EnableJpaRepositories(basePackages = "com.repotech.reposervices")
 public class Reposervices {
 
     public static void main(String... args) {
