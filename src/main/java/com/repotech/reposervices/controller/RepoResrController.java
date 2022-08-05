@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author amahayak
  */
 @RestController
-@RequestMapping("/reposervice")
+@RequestMapping("reposervice")
 public class RepoResrController {
     
     private final InvoiceRepository repository; 
@@ -35,31 +35,31 @@ public class RepoResrController {
     }
     @Autowired private invoiceService invsrv;
     
-     @GetMapping("/welcome")
+     @GetMapping("welcome")
     public String repotest(){
         return "This is first reposervice";
     }
     
-    @PostMapping("/invoices")
+    @PostMapping("invoices")
     public Invoice saveInvoice(@Valid @RequestBody Invoice invoice ){
        return invsrv.saveInvoices(invoice);
     }
     
     //Read Ops
-    @GetMapping("/invoices")
+    @GetMapping("invoices")
     public List<Invoice> fetchAllInvoices(){
         return invsrv.findAllInv();
     }
     
     //Update
-    @PutMapping("/invoices/{id}")
+    @PutMapping("invoices/{id}")
     public Invoice updateInvoice(@RequestBody Invoice invoice, 
             @PathVariable("id") Long invId){
         return invsrv.updateInvoice(invoice, invId);
     }
     
     //Delete
-    @DeleteMapping("/invoices/{id}")
+    @DeleteMapping("invoices/{id}")
     public String deleteInvoiceById(@PathVariable("id") Long invId){
         invsrv.deleteInvoiceById(invId);
         return "Deleted Successfully";

@@ -20,8 +20,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  * @author amahayak
  */
 @SpringBootApplication(exclude = {ErrorMvcAutoConfiguration.class,
-    SqlInitializationAutoConfiguration.class},
-        scanBasePackages = {"com.repotech.reposervices","com.repotech.reposervices.controller"})
+    SqlInitializationAutoConfiguration.class}/*,
+        scanBasePackages = {"com.repotech.reposervices","com.repotech.reposervices.controller"}*/)
 @ComponentScan(basePackages = "com.repotech.reposervices.RepoResrController")
 @EnableAutoConfiguration
 //@ComponentScan(basePackageClasses  = RepoResrController.class)
