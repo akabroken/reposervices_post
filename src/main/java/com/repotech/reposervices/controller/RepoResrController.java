@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author amahayak
  */
 @RestController
-@RequestMapping("reposervice")
+@RequestMapping("/reposervice")
 public class RepoResrController {
     
     private final InvoiceRepository repository; 
@@ -35,7 +35,7 @@ public class RepoResrController {
     }
     @Autowired private invoiceService invsrv;
     
-     @GetMapping("welcome")
+     @GetMapping("/welcome")
     public String repotest(){
         return "This is first reposervice";
     }
