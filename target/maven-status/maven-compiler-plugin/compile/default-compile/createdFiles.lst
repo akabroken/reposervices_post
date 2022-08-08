@@ -4,4 +4,5 @@ com\repotech\reposervices\service\invoiceService.class
 com\repotech\reposervices\service\invoiceServiceImpl.class
 com\repotech\reposervices\entity\Invoice$InvoiceBuilder.class
 com\repotech\reposervices\config\JpaConfig.class
+com\repotech\reposervices\controller\RepoResrController.class
 com\repotech\reposervices\Reposervices.class

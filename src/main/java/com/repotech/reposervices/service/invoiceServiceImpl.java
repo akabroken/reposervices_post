@@ -45,15 +45,7 @@ public class invoiceServiceImpl  implements invoiceService {
      // return tete;
     }
     
-      //  @Override
-    public List<Invoice> findAllIIInv(){
-        
-//        List<Invoice> tete;
-//        tete = (List<Invoice>)(Invoice)invoiceRepository.findAll();
-        
-      return (List<Invoice>)invoiceRepository.findAll();
-     // return tete;
-    }
+
     
     // Update operation
     @Override
