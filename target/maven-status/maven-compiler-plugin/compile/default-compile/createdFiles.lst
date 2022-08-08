@@ -1,4 +1,4 @@
-com\repotech\reposervices\InvoiceRepository.class
+com\repotech\reposervices\repository\InvoiceRepository.class
 com\repotech\reposervices\RepoResrController.class
 com\repotech\reposervices\entity\Invoice.class
 com\repotech\reposervices\service\invoiceService.class
