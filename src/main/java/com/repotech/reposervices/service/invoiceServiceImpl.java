@@ -41,7 +41,7 @@ public class invoiceServiceImpl  implements invoiceService {
 //        List<Invoice> tete;
 //        tete = (List<Invoice>)(Invoice)invoiceRepository.findAll();
         
-      return (List<Invoice>)(Invoice)invoiceRepository.findAll();
+      return (List<Invoice>)invoiceRepository.findAll();
      // return tete;
     }
     
